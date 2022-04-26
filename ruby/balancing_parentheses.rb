@@ -1,5 +1,14 @@
 def balancing_parentheses(string)
-  # type your code in here
+  arr = string.split('')
+  count = 0
+  arr.map{|i|
+  if i == '('
+    count-=1
+  elsif i == ')'
+    count+=1
+  end
+}
+  count
 end
 
 if __FILE__ == $PROGRAM_NAME
